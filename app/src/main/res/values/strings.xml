@@ -20,7 +20,7 @@
     <string name="edit_vehicle">Next</string>
     <string name="send">Send</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_task_assigned">TaskAssignedActivity</string>
 
@@ -28,5 +28,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_task_canceled">TaskCanceledActivity</string>
     <string name="title_activity_policy_expire">PolicyExpireActivity</string>
+    <string name="title_activity_login">Login</string>
 
 </resources>

@@ -283,6 +283,7 @@
     <!-- From: file:/Users/KumarSambhav/Documents/Carfix/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="title_activity_guide">Guide</string>
+    <string name="title_activity_login">Login</string>
     <string name="title_activity_main_drawer">Carfix</string>
     <string name="title_activity_policy_expire">PolicyExpireActivity</string>
     <string name="title_activity_task_assigned">TaskAssignedActivity</string>

@@ -77,36 +77,32 @@
         <activity
             android:name="my.carfix.carfix.activity.GuideActivity"
             android:label="@string/title_activity_guide"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="my.carfix.carfix.activity.MainDrawerActivity"
             android:label="@string/title_activity_main_drawer"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustNothing" >
-        </activity>
+            android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name="my.carfix.carfix.activity.TaskAssignedActivity"
-            android:label="@string/title_activity_task_assigned" >
-        </activity>
+            android:label="@string/title_activity_task_assigned" />
 
         <service
             android:name="my.carfix.carfix.service.TruckCheckInService"
-            android:exported="false" >
-        </service>
+            android:exported="false" />
         <service
             android:name="my.carfix.carfix.service.LocationService"
-            android:exported="false" >
-        </service>
+            android:exported="false" />
 
         <activity
             android:name="my.carfix.carfix.activity.TaskCanceledActivity"
-            android:label="@string/title_activity_task_canceled" >
-        </activity>
+            android:label="@string/title_activity_task_canceled" />
         <activity
             android:name="my.carfix.carfix.activity.PolicyExpireActivity"
-            android:label="@string/title_activity_policy_expire" >
-        </activity>
+            android:label="@string/title_activity_policy_expire" />
+        <activity
+            android:name="my.carfix.carfix.activity.Login"
+            android:label="@string/title_activity_login" />
     </application>
 
 </manifest>

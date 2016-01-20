@@ -234,7 +234,7 @@ public class SplashScreenActivity extends ActionBarActivity
 
     private void gotoMainDrawerActivity()
     {
-        Intent mIntent = new Intent(this, MainDrawerActivity.class);
+        Intent mIntent = new Intent(this, Login.class);
 
         startActivity(mIntent);
 
