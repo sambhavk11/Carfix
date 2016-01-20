@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <my.carfix.carfix.TypefacedTextView android:id="@+id/text_view"
+        android:text="Select a case to view recent update"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:fontStyle="helvetica_neue_light"/>
+
+    <ListView android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/add_vehicle"
+        android:layout_below="@id/text_view">
+    </ListView>
+</RelativeLayout>
+<!-- From: file:/Users/KumarSambhav/Documents/Carfix/app/src/main/res/layout/fragment_case_list.xml -->

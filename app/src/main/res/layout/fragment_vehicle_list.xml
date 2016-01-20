@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <my.carfix.carfix.TypefacedTextView android:id="@+id/text_view"
+        android:text="Select an existing vehicle or add a new vehicle"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        app:fontStyle="helvetica_neue_light"/>
+
+    <ListView android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_vehicle_layout"
+        android:layout_below="@id/text_view">
+    </ListView>
+
+    <LinearLayout android:id="@+id/add_vehicle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="right">
+    <my.carfix.carfix.TypefacedButton android:id="@+id/add_vehicle"
+        android:text="Add"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/buttonshape"
+        android:textColor="#ffffff"
+        app:fontStyle="helvetica_neue_light"/>
+    </LinearLayout>
+</RelativeLayout>

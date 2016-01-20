@@ -1,0 +1,194 @@
+<my.carfix.carfix.KeyboardDetectorRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="my.carfix.carfix.fragment.VehicleFragment">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <my.carfix.carfix.TypefacedTextView
+                    android:id="@+id/tv_vehicle_regno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Reg. No."
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp"
+                    app:fontStyle="helvetica_neue_light" />
+
+                <my.carfix.carfix.TypefacedEditText
+                    android:id="@+id/et_vehicle_regno"
+                    style="@style/DefaultEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789QWERTYUIOPASDFGHJKLZXCVBNM"
+                    android:gravity="right"
+                    android:hint="..."
+                    android:inputType="textCapCharacters|textNoSuggestions"
+                    app:fontStyle="helvetica_neue_light"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/Divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <my.carfix.carfix.TypefacedTextView
+                    android:id="@+id/tv_vehicle_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Model"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp"
+                    app:fontStyle="helvetica_neue_light" />
+
+                <my.carfix.carfix.TypefacedEditText
+                    android:id="@+id/et_vehicle_model"
+                    style="@style/DefaultEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:hint="..."
+                    android:inputType="text|textNoSuggestions"
+                    app:fontStyle="helvetica_neue_light"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/Divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <my.carfix.carfix.TypefacedTextView
+                android:id="@+id/tv_phoneno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp"
+                app:fontStyle="helvetica_neue_light" />
+
+            <my.carfix.carfix.TypefacedEditText
+                android:id="@+id/et_phoneno"
+                style="@style/DefaultEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:digits="0123456789"
+                android:gravity="right"
+                android:hint="..."
+                android:imeOptions="actionNext"
+                android:inputType="phone|textNoSuggestions"
+                app:fontStyle="helvetica_neue_light"/>
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <my.carfix.carfix.TypefacedTextView
+                android:id="@+id/tv_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp"
+                app:fontStyle="helvetica_neue_light" />
+
+            <my.carfix.carfix.TypefacedEditText
+                android:id="@+id/et_service"
+                style="@style/DefaultEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="right"
+                android:hint="..."
+                android:imeOptions="actionDone"
+                android:imeActionLabel="Add"
+                app:fontStyle="helvetica_neue_light"/>
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="right">
+    <my.carfix.carfix.TypefacedButton android:id="@+id/delete_vehicle"
+        android:text="Delete"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/buttonshape"
+        android:textColor="#ffffff"
+        app:fontStyle="helvetica_neue_light"/>
+    </LinearLayout>
+
+</my.carfix.carfix.KeyboardDetectorRelativeLayout>
+<!-- From: file:/Users/KumarSambhav/Documents/Carfix/app/src/main/res/layout/fragment_vehicle.xml -->

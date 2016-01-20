@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="my.carfix.carfix.activity.TaskAssignedActivity">
+</menu>
+<!-- From: file:/Users/KumarSambhav/Documents/Carfix/app/src/main/res/menu/menu_task_assigned.xml -->

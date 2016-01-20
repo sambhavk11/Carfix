@@ -1,0 +1,76 @@
+<my.carfix.carfix.KeyboardDetectorRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/map_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollview">
+
+        <FrameLayout
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:tag="maptag" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+
+                <my.carfix.carfix.TypefacedTextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp"
+                    app:fontStyle="helvetica_neue_light" />
+
+                <my.carfix.carfix.TypefacedEditText
+                    android:id="@+id/et_address"
+                    style="@style/DefaultEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:editable="false"
+                    android:inputType="textNoSuggestions"
+                    android:minLines="3"
+                    android:scrollHorizontally="false"
+                    android:textStyle="normal"
+                    app:fontStyle="helvetica_neue_light"/>
+            </LinearLayout>
+
+            <View
+                style="@style/Divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+</ScrollView>
+    </my.carfix.carfix.KeyboardDetectorRelativeLayout>

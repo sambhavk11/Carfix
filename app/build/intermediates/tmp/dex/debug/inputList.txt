@@ -1,0 +1,11 @@
+/Users/KumarSambhav/Documents/Carfix/app/build/intermediates/classes/debug
+/Users/KumarSambhav/Documents/Carfix/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-05aec0a7cc28acbeba46866c4108f6135f88978a.jar
+/Users/KumarSambhav/Documents/Carfix/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.5.0-380800ac3d2f2607fbd7d70c7d05aca53f06f2c8.jar
+/Users/KumarSambhav/Documents/Carfix/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.6-f1e5692411beace540402914f906f3885151a3cb.jar
+/Users/KumarSambhav/Documents/Carfix/app/build/intermediates/pre-dexed/debug/picasso-2.4.0-ccaff133ae48b2c6eb16aaaacd76eff790f1ad40.jar
+/Users/KumarSambhav/Documents/Carfix/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-da7d82b899c0ff4054e7d39a2e3ca4c08542721c.jar
+/Users/KumarSambhav/Documents/Carfix/app/build/intermediates/pre-dexed/debug/jackson-core-2.5.0-69aeca79a57d4a475fbf470ee54a0fd58ce6f65d.jar
+/Users/KumarSambhav/Documents/Carfix/app/build/intermediates/pre-dexed/debug/classes-99b6095d61e87bea4c0ff6ef5fbe92b6dd447315.jar
+/Users/KumarSambhav/Documents/Carfix/app/build/intermediates/pre-dexed/debug/classes-78bb055ab7c3c755ebb126bdcb79b6815968e725.jar
+/Users/KumarSambhav/Documents/Carfix/app/build/intermediates/pre-dexed/debug/jackson-databind-2.5.0-7331c06492a7d673ca23e19e0826eda0d3b340c4.jar
+/Users/KumarSambhav/Documents/Carfix/app/build/intermediates/pre-dexed/debug/classes-ca9125e3833b9c01d9342fe913f557f8be19754b.jar

@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#fff"
+    tools:context="my.carfix.carfix.activity.PolicyExpireActivity">
+
+    <my.carfix.carfix.TypefacedTextView android:id="@+id/text_view"
+        android:text="Policy Reminder\n\nVehicle Reg. No. : WB2729A\nPolicy Effective Date : 01/01/2015 00:00\nPolicy Expired Date : 01/01/2016 00:00\n\nMessage : \n"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_margin="20dp"
+        app:fontStyle="helvetica_neue_light"/>
+
+    <my.carfix.carfix.TypefacedButton android:id="@+id/back"
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/buttonshape"
+        android:textColor="#ffffff"
+        app:fontStyle="helvetica_neue_light"/>
+
+</RelativeLayout>

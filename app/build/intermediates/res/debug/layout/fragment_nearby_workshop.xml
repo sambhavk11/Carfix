@@ -1,0 +1,103 @@
+<my.carfix.carfix.KeyboardDetectorRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/map_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/scrollview">
+
+        <FrameLayout
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:tag="maptag" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+
+                <my.carfix.carfix.TypefacedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Company Name"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp"
+                    app:fontStyle="helvetica_neue_light" />
+
+                <my.carfix.carfix.TypefacedTextView
+                    android:id="@+id/text_view_company_name"
+                    android:text=""
+                    android:textColor="#000"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    app:fontStyle="helvetica_neue_light" />
+            </LinearLayout>
+
+            <View
+                style="@style/Divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|right">
+
+                <my.carfix.carfix.TypefacedButton android:id="@+id/btn_navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Navigation"
+                    android:textStyle="bold"
+                    android:background="@drawable/buttonshape"
+                    android:textColor="#ffffff"
+                    app:fontStyle="helvetica_neue_light" />
+            </LinearLayout>
+
+            <View
+                style="@style/Divider"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+
+
+        </ScrollView>
+</my.carfix.carfix.KeyboardDetectorRelativeLayout>
+<!-- From: file:/Users/KumarSambhav/Documents/Carfix/app/src/main/res/layout/fragment_nearby_workshop.xml -->
